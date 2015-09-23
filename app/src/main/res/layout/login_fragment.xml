@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:paddingLeft="@dimen/indent"
+    android:paddingRight="@dimen/indent"
+    android:paddingBottom="@dimen/indent"
+    android:background="@color/white_login_bg">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/indent"
+        android:src="@drawable/im_login_label"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/indent_up_login"
+        android:drawableLeft="@drawable/im_login"
+        android:hint="@string/hint_login"
+        android:id="@+id/editTextLogin"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/indent_up_password"
+        android:drawableLeft="@drawable/im_password"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:id="@+id/editTextPassword"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_password"
+        android:id="@+id/checkboxShowPassword"
+        android:textColor="@color/checkbox_color"
+        android:layout_gravity="end" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/log_in"
+        android:id="@+id/buttonSignUp"
+        style="@style/ButtonStyle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewForgotPassword"
+        android:layout_gravity="center"
+        android:text="@string/forgot_password"
+        android:layout_marginTop="@dimen/indent_up_hint"
+        android:textColor="@color/login_help_text_color"
+        android:textSize="@dimen/login_hint_text_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewSignUp"
+        android:layout_gravity="center"
+        android:text="@string/sign_up"
+        android:layout_marginTop="@dimen/indent_up_login"
+        android:textColor="@color/login_help_text_color"
+        android:textSize="@dimen/login_hint_text_color"/>
+
+</LinearLayout>
+
+</ScrollView>

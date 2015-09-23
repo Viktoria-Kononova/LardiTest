@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white_login_bg">#FFFFFF</color>
+    <color name="green_button">#64aa21</color>
+    <color name="login_help_text_color">#1b7a9c</color>
+    <color name="checkbox_color">#8d8d8d</color>
+</resources>

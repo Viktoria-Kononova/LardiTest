@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="indent">10dp</dimen>
+    <dimen name="indent_up_hint">20dp</dimen>
+    <dimen name="indent_up_login">30dp</dimen>
+    <dimen name="indent_up_password">15dp</dimen>
+    <dimen name="login_hint_text_color">17sp</dimen>
+</resources>
