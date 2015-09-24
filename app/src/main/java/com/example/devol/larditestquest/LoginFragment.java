@@ -18,6 +18,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.devol.larditestquest.login.ILogin;
 import com.example.devol.larditestquest.login.Login;
 
 public class LoginFragment extends Fragment implements View.OnClickListener {
@@ -27,6 +28,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
     private EditText mLogin;
     private EditText mPassword;
     private CheckBox mShowPassword;
+    private ILogin login;
 
     @Nullable
     @Override
@@ -50,15 +52,17 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
         mShowPassword.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked){
+                if (isChecked) {
                     mPassword.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
                     mPassword.setSelection(mPassword.getText().length());
-                }else {
+                } else {
                     mPassword.setInputType(129);
                     mPassword.setSelection(mPassword.getText().length());
                 }
             }
         });
+
+        login = new Login();
 
         return view;
     }
@@ -82,7 +86,6 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
                 if (passwordText.equals("")){
                     mPassword.setError(getResources().getString(R.string.empty_password));
                 }
-                Login login = new Login();
                 boolean isLogIn = login.logIn(loginText, passwordText);
                 if (isLogIn){
                     Toast.makeText(getContext(), getResources().getString(R.string.successful_log_in), Toast.LENGTH_SHORT).show();
