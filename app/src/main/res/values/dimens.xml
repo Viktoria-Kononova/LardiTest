@@ -3,8 +3,9 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="indent">10dp</dimen>
+    <dimen name="indent_no_connection">5dp</dimen>
     <dimen name="indent_up_hint">20dp</dimen>
-    <dimen name="indent_up_login">30dp</dimen>
-    <dimen name="indent_up_password">15dp</dimen>
-    <dimen name="login_hint_text_color">17sp</dimen>
+    <dimen name="indent_up">15dp</dimen>
+    <dimen name="login_hint_text_size">17sp</dimen>
+    <dimen name="login_password_text_size">20sp</dimen>
 </resources>

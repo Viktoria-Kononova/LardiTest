@@ -3,12 +3,25 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+        <item name="buttonStyle">@style/ButtonStyle</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="editTextStyle">@style/EditTextStyle</item>
     </style>
 
     <style name="ButtonStyle" parent="Widget.AppCompat.Button">
         <item name="android:textColor">@color/white_login_bg</item>
         <item name="android:background">@color/green_button</item>
         <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="TextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/login_help_text_color</item>
+        <item name="android:textSize">@dimen/login_hint_text_size</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textColorHint">@color/checkbox_color</item>
     </style>
 
 </resources>

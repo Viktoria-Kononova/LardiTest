@@ -12,8 +12,8 @@
     <string name="forgot_password_message">Пароль отправлен вам на почту</string>
     <string name="sign_up_message">Для регистрации заполните форму</string>
     <string name="successful_log_in">Успешный вход</string>
-    <string name="wrong_login">Неверный логин</string>
-    <string name="wrong_password">Неверный пароль</string>
+    <string name="wrong_login">Неверный логин или пароль</string>
     <string name="empty_login">Поле Логин обязательно для заполнения</string>
     <string name="empty_password">Поле Пароль обязательно для заполнения</string>
+    <string name="no_connection">Нет связи с Lardi-Trans</string>
 </resources>

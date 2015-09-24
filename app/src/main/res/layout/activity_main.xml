@@ -1,11 +1,27 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white_login_bg"
     tools:context=".MainActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/container"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/indent"
+        android:paddingTop="@dimen/indent_no_connection"
+        android:paddingBottom="@dimen/indent_no_connection"
+        android:id="@+id/textViewConnection"
+        android:visibility="gone"
+        android:text="@string/no_connection"
+        android:textColor="@color/white_login_bg"
+        android:background="@color/no_connection_red"
+        android:layout_gravity="bottom"/>
 
 </RelativeLayout>

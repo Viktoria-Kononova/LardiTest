@@ -4,4 +4,6 @@
     <color name="green_button">#64aa21</color>
     <color name="login_help_text_color">#1b7a9c</color>
     <color name="checkbox_color">#8d8d8d</color>
+    <color name="text_black">#000000</color>
+    <color name="no_connection_red">#ff0900</color>
 </resources>

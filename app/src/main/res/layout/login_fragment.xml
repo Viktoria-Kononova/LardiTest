@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
 
 <LinearLayout
     android:orientation="vertical"
@@ -10,7 +10,6 @@
     android:focusableInTouchMode="true"
     android:paddingLeft="@dimen/indent"
     android:paddingRight="@dimen/indent"
-    android:paddingBottom="@dimen/indent"
     android:background="@color/white_login_bg">
 
     <ImageView
@@ -22,19 +21,19 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/indent_up_login"
+        android:layout_marginTop="@dimen/indent_up"
         android:drawableLeft="@drawable/im_login"
         android:hint="@string/hint_login"
-        android:id="@+id/editTextLogin"/>
+        android:id="@+id/editTextLogin" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/indent_up_password"
+        android:layout_marginTop="@dimen/indent_up"
         android:drawableLeft="@drawable/im_password"
         android:hint="@string/hint_password"
         android:inputType="textPassword"
-        android:id="@+id/editTextPassword"/>
+        android:id="@+id/editTextPassword" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -48,28 +47,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/log_in"
-        android:id="@+id/buttonSignUp"
-        style="@style/ButtonStyle"/>
+        android:id="@+id/buttonSignUp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewForgotPassword"
-        android:layout_gravity="center"
-        android:text="@string/forgot_password"
         android:layout_marginTop="@dimen/indent_up_hint"
-        android:textColor="@color/login_help_text_color"
-        android:textSize="@dimen/login_hint_text_color"/>
+        android:layout_marginBottom="@dimen/indent"
+        android:layout_gravity="center"
+        android:id="@+id/textViewForgotPassword"
+        android:text="@string/forgot_password" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewSignUp"
+        android:layout_marginTop="@dimen/indent_up_hint"
+        android:layout_marginBottom="@dimen/indent"
         android:layout_gravity="center"
-        android:text="@string/sign_up"
-        android:layout_marginTop="@dimen/indent_up_login"
-        android:textColor="@color/login_help_text_color"
-        android:textSize="@dimen/login_hint_text_color"/>
+        android:id="@+id/textViewSignUp"
+        android:text="@string/sign_up" />
+
+
 
 </LinearLayout>
 

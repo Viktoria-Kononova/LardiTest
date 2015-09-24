@@ -5,7 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +24,13 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.add(R.id.container, loginFragment);
         fragmentTransaction.commit();
+        TextView noConnection = (TextView)findViewById(R.id.textViewConnection);
+
+        if (!Utils.isConnection(getApplicationContext())){
+            noConnection.setVisibility(View.VISIBLE);
+        }else {
+            noConnection.setVisibility(View.GONE);
+        }
     }
 
     @Override
